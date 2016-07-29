@@ -1,0 +1,34 @@
+{
+    "name": "okasuke/test-package",
+    "description": "test package",
+    "authors": [
+        {
+            "name": "okashitay",
+            "email": "okashitay@test.co.jp"
+        }
+    ],
+    "type": "library",
+    "require": {
+    	"php": ">=5.5.9",
+    	"illuminate/support": "^5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "~0.0",
+        "illuminate/log": "^5.1",
+        "illuminate/config": "^5.1"
+  	},
+  	"autoload": {
+        "psr-4": {
+            "Istyle\\LaravelPackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/PackageTestCase.php"
+        ]
+    },
+    "scripts": {
+        "tests": "phpunit"
+    }
+}
